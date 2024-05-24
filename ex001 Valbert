@@ -1,0 +1,26 @@
+/******************************************************************************
+
+1.	A	imobiliária	Imóbilis	vende	apenas	terrenos	retangulares.
+Faça	um	algoritmo	para	ler	as	
+dimensões	de	um	terreno	e	depois	exibir	a	área	do	terreno.
+
+*******************************************************************************/
+#include <stdio.h>
+
+int main()
+{float larg, area, comp;
+    
+    printf("imobiliária Imóbilis\n\n");
+    
+    printf("Digite a largura do terreno em metros: ");
+    scanf("%f", &larg);
+    
+    printf("Digite o comprimento do terreno em metros: ");
+    scanf("%f", &comp);
+    
+    area = larg * comp;
+    
+    printf("A area do terreno é %.2f metros", area);
+    
+    return 0;
+}
