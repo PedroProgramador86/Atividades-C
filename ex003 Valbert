@@ -1,0 +1,31 @@
+/******************************************************************************
+
+3.	A	padaria	Hotpão	vende	uma	certa	quanPdade	de	pães	franceses	e	uma	quanPdade	de	
+broas	a	cada	dia.	Cada	pãozinho	custa	R$	0,12	e	a	broa	custa	R$	1,50.	Ao	final	do	dia,	o	dono	
+quer	saber	quanto	arrecadou	com	a	venda	dos	pães	e	broas	(juntos),	e	quanto	deve	guardar	
+numa	conta	de	poupança	(10%	do	total	arrecadado).	Você	foi	contratado	para	fazer	os	cálculos	
+para	o	dono.	Com	base	nestes	fatos,	faça	um	algoritmo	para	ler	as	quanPdades	de	pães	e	de	
+broas,	e	depois	calcular	os	dados	solicitados.
+
+*******************************************************************************/
+#include <stdio.h>
+
+int main()
+{ float pao, broas, total, poup;
+    
+    printf("Padaria Hotpão\n\n");
+    
+    printf("Digite a quantidade de pães vendidos: ");
+    scanf("%f", &pao);
+    
+    printf("Digite a quantidade de broas vendidas: ");
+    scanf("%f", &broas);
+    
+    total = (pao * 0.2) + (broas * 1.50);
+    poup = (total * 10) / 100;
+    
+    printf("O valor total arrecadado com a venda de pães e broas é R$%.2f ", total);
+    printf("O valor a se guardar na conta poupança é R$%.2f", poup);
+
+    return 0;
+}
