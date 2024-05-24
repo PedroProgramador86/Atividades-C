@@ -1,0 +1,24 @@
+/******************************************************************************
+
+6.	O	restaurante	a	quilo	Bem-Bão	cobra	R$12,00	por	cada	quilo	de	refeição.	Escreva	um	
+algoritmo	que	leia	o	peso	do	prato	montado	pelo	cliente	(em	quilos)	e	imprima	o	valor
+a	pagar.	
+Assuma	que	a	balança	já	desconte	o	peso	do	prato.
+
+*******************************************************************************/
+#include <stdio.h>
+
+int main()
+{float prato, total;
+    
+    printf("Restaurante Bem-Bão\n\n");
+    
+    printf("Peso do prato montado em Kg: ");
+    scanf("%f", &prato);
+    
+    total = prato * 12.00;
+    
+    printf("O valor a se pagar é R$%.2f", total);
+    
+    return 0;
+}
