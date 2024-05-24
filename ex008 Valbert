@@ -1,0 +1,30 @@
+/******************************************************************************
+
+8.	Faça	um	algoritmo	para	ler	três	notas	de	um	aluno	em	uma	disciplina
+e	imprimir	a	sua	média	
+ponderada	(as	notas	tem	pesos	respecPvos	de	1,	2	e	3).
+
+*******************************************************************************/
+#include <stdio.h>
+
+int main()
+{float n1, n2, n3, calc1, calc2;
+    
+    printf("Boletim\n");
+    
+    printf("Digite a sua nota parcial: ");
+    scanf("%f", &n1);
+    
+    printf("Digite a sua nota bimestral: ");
+    scanf("%f", &n2);
+    
+    printf("Digite a sua nota atitudinal: ");
+    scanf("%f", &n3);
+
+    calc1 = (n1 * 1) + (n2 * 2) + (n3 * 3);
+    calc2 = calc1 / (1 + 2 + 3);
+
+    printf("\nSua media é %.2f", calc2); 
+
+    return 0;
+}
