@@ -1,0 +1,32 @@
+/******************************************************************************
+
+10.	Construa	um	algoritmo	para	calcular	a	distância	entre	dois
+pontos	do	plano	cartesiano.	
+Cada	ponto	é	um	par	ordenado	(x,y)
+
+*******************************************************************************/
+#include <stdio.h>
+#include <math.h>
+
+int main()
+{float x1, y1, x2, y2, calcx, calcy, soma, result;
+    
+    printf("Plano Cartesiano\n");
+    
+    printf("Digite a primeira coordenada (x1, y1): ");
+    scanf("%f %f", &x1, &y1);
+    
+    printf("Digite a segunda coordenada (x2, y2): ");
+    scanf("%f %f", &x1, &y1);
+    
+    calcx = (x2 - x1) * (x2 - x1);
+    calcy = (y2 - y1) * (y2 - y1);
+    
+    soma = calcx + calcy;
+    
+    result = sqrt (soma);
+    
+    printf("A distância entre os dois pontos do plano cartesiano é %.2f", result);
+
+    return 0;
+}
